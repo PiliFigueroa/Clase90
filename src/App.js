@@ -6,8 +6,10 @@ function App() {
 
   const user = {
     name: "Alberto",
+    lastname: "Perez",
     age: 32,
-    likesCSS: false
+    likesCSS: false,
+    img: "https://yca.org.ar/wp-content/uploads/sites/4/2019/06/perfil-avatar-hombre-icono-redondo_24640-14044-300x300.jpg"
   }
 
   const user2 = {

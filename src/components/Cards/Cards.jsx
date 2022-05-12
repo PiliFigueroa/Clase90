@@ -3,7 +3,7 @@ import './Cards.css'
 
 const Cards = ({ user }) => {
     
-    // const { name, age } = user
+    const { name, age, img, lastname } = user
 
     // return(
     //     <div className='container'>
@@ -15,8 +15,9 @@ const Cards = ({ user }) => {
         <>
             {user ?               
                 <div className='container'>
-                    <p>{user?.name}</p>
-                    <p>{user?.age}</p>
+                    <img src={img ? img : "https://secure.gravatar.com/avatar/10432cb6335abedfea55593fe17c7e33?s=96&d=mm&r=g%22"} alt="Avatar" />
+                    <p>{name} {lastname ? lastname : "Apellido"}</p>
+                    <p>{age}</p>
                     <p>Le gusta maquetar? {user.likesCSS ? "Si" : "No"}</p>
                 </div>
                  :
